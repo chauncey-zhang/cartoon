@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--<meta http-equiv="expires" content="0">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<meta http-equiv="Pragma" content="no-cache">-->
+		<title>牛社</title>
+		<link rel="stylesheet" type="text/css" href="css/loading.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/jquery.easing.min.js"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+		<script src="js/handlerApp.js" type="text/javascript"></script>
+		<!--<link rel="stylesheet" type="text/css" href="css/rotateCoco.css"/>-->
+	   
+		<!--<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>-->
+	</head>
+
+	<body>
+		<!--loading页-->
+		<div id="loadContainer">
+			<div id="logo">
+				<img src="images/logo.png" />
+			</div>
+
+			<div id="loadingBar">
+				<div id="bar">
+					<span id="percentNum"></span>
+				</div>
+			</div>
+		</div>
+		<!--提示旋转手机-->
+		<!--<div id="rotateScreen">
+			<div id="rotateImg">
+				<img style="width: 30%;" src="images/tip.png" />
+			</div>
+			<div id="rotateTip">
+				<span>为了获得完美体验<br/>请横屏浏览</span>
+			</div>
+		</div>-->
+		<!--第一镜-->
+		<div id="firstScreen">
+			<!--开始界面-->
+			<div id="startScreen">
+				<div id="text_logo">
+					<img id="text_logoImg" src="images/text_logo.png" />
+				</div>
+				<div id="huoyansan">
+					<img id="huoyansanImg" src="images/huoyansan.png" />
+				</div>
+				<div id="start_btn">
+					<img id="start_btnImg" src="images/btn_start.png" />
+				</div>
+			</div>
+
+			<div id="chatKuang">
+				<!--<div id="chatContent">
+					<span>热炸了！<br/>好像喝冰饮！</span>
+				</div>-->
+				<!--<img style="width:50%" src="images/chat.gif"/>-->
+			</div>
+
+			<div id="dawangXunsan">
+				<div id="dawang1">
+					<img id="dawang1Img" src="images/screen1dawang1.png" />
+				</div>
+
+				<div id="dawang2">
+					<img id="dawang2Img" src="images/screen1dawang2.png" />
+				</div>
+
+				<div id="dawang3">
+					<img id="dawang3Img" src="images/screen1dawang3.png" />
+				</div>
+
+				<div id="dawang4">
+					<img id="dawang4Img" src="images/screen1dawang4.png" />
+				</div>
+			</div>
+
+			<div id="walk">
+				<!--站立人-->
+				<div id="stayPeople">
+					<img style="width:60%" src="images/wo.gif" />
+				</div>
+				<!--正面转侧面-->
+				<div id="zheng_zhuan_ce">
+					<img style="width:60%" src="images/wo_and_walk.gif" />
+				</div>
+				<!--行走人-->
+				<div id="wakl_and_wo_people">
+					<img style="width:60%" src="images/walk_and_wo.gif" />
+				</div>
+				<!--侧面行走人-->
+				<div id="ce_walk">
+					<img style="width:60%" src="images/walk.gif" />
+				</div>
+			</div>
+
+			<div id="hand">
+				<img id="handImg" src="images/hand.png" />
+			</div>
+
+		</div>
+
+		<!--第二镜-->
+		<div id="secondScreen">
+
+			<div id="secondPeopleChat">
+				<img id="secondPeopleChatImg" src="images/secondPeopleChat.png" />
+			</div>
+
+			<div id="secondPeople">
+				<img style="width:180%" src="" />
+			</div>
+
+			<div id="youbao_shadow">
+				<img id="youbao_shadowImg" src="images/youbao_shadow.png" />
+			</div>
+
+			<div id="youbao">
+				<img id="youbaoImg" src="images/youbao.gif" />
+			</div>
+
+			<div id="youbao_chat">
+				<img id="youbao_chatImg" src="images/youbaoChat.png" />
+			</div>
+		</div>
+
+		<!--第三镜-->
+		<div id="thirdScreen">
+			<div id="thirdPeople">
+				<img style="width:30%" src="images/doupeng.gif" />
+			</div>
+
+			<div id="thirdBtn">
+				<img id="thirdBtnImg" src="images/scantext.gif" />
+			</div>
+
+			<div id="scanme1">
+				<img id="scanme1Img" src="images/scanme1.png" />
+			</div>
+
+			<div id="torken">
+				<img id="torkenImg" src="images/getTorken.png" />
+			</div>
+
+			<div id="scanme2">
+				<img id="scanme2Img" src="images/scanme2.png" />
+			</div>
+
+			<div id="scanme3">
+				<img id="scanme3Img" src="images/scanme3.png" />
+			</div>
+		</div>
+		<!--第四镜-->
+		<div id="fourthScreen">
+			<div id="scan">
+				<img id="sanImg" src="images/scan.gif">
+			</div>
+			<div id="yaoTip">
+				<img id="yaoTipImg" src="images/yaoyiyao.png">
+			</div>
+		</div>
+
+		<!--第四加镜-->
+
+		<div id="fourthScreenPlus">
+			<div id="scanFlash">
+				<img id="scanFlashImg" src="images/scanflash.png" />
+			</div>
+		</div>
+
+		<!--第五镜-->
+		<div id="fiveScreen">
+			<div id="duangCoco">
+				<img id="duangCocoImg" src="images/screen6Duang.png" />
+			</div>
+			<div id="five_click_area">
+				<img id="five_click_area_Img" src="images/coco.gif" />
+			</div>
+			<div id="five_red_hand">
+				<img style="width:45%" src="images/red_hand.png" />
+			</div>
+			<div id="meto">
+				<img id="btnMetoImg" src="images/metoBtn.png" />
+			</div>
+
+		</div>
+
+		<!--第六镜-->
+		<div id="sixScreen">
+			<div id="appDown" class="style">
+
+				<div id="line1_left" class="line1">
+					<span>牛社app扫码免费换可乐</span>
+				</div>
+
+				<div id="line2_left" class="line2">
+					<span>“app”获取通道</span>
+				</div>
+
+				<a href="http://www.nbclub.cc/downloads/" style="text-decoration: none;">
+					<div id="btn_left" class="btn_style">
+						牛社APP下载
+					</div>
+				</a>
+			</div>
+			<div id="moreFelare" class="style">
+
+				<div id="line1_right" class="line1">
+					<span>暂不喝可乐</span>
+				</div>
+
+				<div id="line2_right" class="line2">
+					<span>看看更多福利</span>
+				</div>
+
+				<a href="#" style="text-decoration: none;">
+					<div id="btn_right" class="btn_style">
+						更多福利
+					</div>
+				</a>
+			</div>
+		</div>
+		<div id="bg_music">
+			<img id="controlBgMusic" style="width:3vw" src="images/open_icon.png" />
+			<audio id="myMusic" src="audio/bg_music.mp3" preload></audio>
+			<audio id="btn_sound" src="audio/btn_sound.mp3" preload></audio>
+			<audio id="fireSound" src="audio/fire.mp3" preload loop></audio>
+			<audio id="scanSound" src="audio/sanSound.mp3" preload></audio>
+			<audio id="footSound" src="audio/footSound.mp3" preload></audio>
+			<audio id="cocoFallSound" src="audio/cocoFall.mp3" preload></audio>
+			<audio id="duangSound" src="audio/duang.mp3" preload></audio>
+			<audio id="dawangSound" src="audio/dawangxunsan.mp3" preload></audio>
+		</div>
+
+		<!--提示旋转手机-->
+		<div id="rotateBg">
+			<div id="rotateScreen">
+				<div id="rotateImg">
+					<img style="width: 30%;" src="images/tip.png" />
+				</div>
+				<div id="rotateTip">
+					<span>为了获得完美体验<br/>请横屏浏览</span>
+				</div>
+			</div>
+		</div>
+		<!--选饮料-->
+		<div id="selectDrink">
+			<div id="imageShow">
+				<img class="imageShowImg" src="" />
+			</div>
+
+			<div id="kuang">
+				<div class="row1">
+					<div class=td><img name="可乐" src="images/drinkImg/coco.png" /></div>
+					<div class=td><img name="雪碧" src="images/drinkImg/xuebi.png" /></div>
+					<div class=td><img name="美年达" src="images/drinkImg/meinianda.png" /></div>
+				</div>
+
+				<div class="row2">
+					<div class=td><img name="芬达" src="images/drinkImg/fenda.png" /></div>
+					<div class=td><img name="阿萨姆" src="images/drinkImg/ashamu.png" /></div>
+					<div class=td><img name="恒大冰泉" src="images/drinkImg/bingquan.png" /></div>
+				</div>
+
+				<div class="row3">
+					<div class=td><img name="营养快线" src="images/drinkImg/yinyangkuaixian.png" /></div>
+					<div class=td><img name="格瓦斯" src="images/drinkImg/gewasi.png" /></div>
+					<div class=td><img name="花生奶" src="images/drinkImg/huashengnai.png" /></div>
+				</div>
+			</div>
+
+			<div id="closeDrinkWindow">
+				确定选择
+				<br/>饮料
+			</div>
+
+		</div>
+		<!--内嵌游戏-->
+		<div id="flyHigh">
+			<iframe src="feidegenggao/fly.html" width="360" height="416" scrolling="no" frameborder="no" marginwidth="0" marginheight="0"></iframe>
+		</div>
+
+		<!--3d旋转可乐-->
+		<!--<div id="coke">
+			<div id="y">
+				<p id="x1"></p>
+				<p id="x2"></p>
+				<p id="x3"></p>
+				<p id="x4"></p>
+				<p id="x5"></p>
+				<p id="x6"></p>
+				<p id="x7"></p>
+				<p id="x8"></p>
+				<p id="x9"></p>
+				<p id="x10"></p>
+				<p id="x11"></p>
+				<p id="x12"></p>
+				<p id="x13"></p>
+				<p id="x14"></p>
+				<p id="x15"></p>
+				<p id="x16"></p>
+				<p id="x17"></p>
+				<p id="x18"></p>
+				<p id="x19"></p>
+				<p id="x20"></p>
+				<p id="x21"></p>
+				<p id="x22"></p>
+				<p id="x23"></p>
+				<p id="x24"></p>
+				<p id="x25"></p>
+				<p id="x26"></p>
+				<p id="x27"></p>
+				<p id="x28"></p>
+				<p id="x29"></p>
+				<p id="x30"></p>
+				<p id="x31"></p>
+				<p id="x32"></p>
+				<p id="x33"></p>
+				<p id="x34"></p>
+				<p id="x35"></p>
+				<p id="x36"></p>
+				<p id="x37"></p>
+				<p id="x38"></p>
+				<p id="x39"></p>
+				<p id="x40"></p>
+				<p id="x41"></p>
+				<p id="x42"></p>
+				<p id="x43"></p>
+				<p id="x44"></p>
+				<p id="x45"></p>
+				<p id="x46"></p>
+				<p id="x47"></p>
+				<p id="x48"></p>
+				<p id="x49"></p>
+				<p id="x50"></p>
+				<p id="x51"></p>
+				<p id="x52"></p>
+				<p id="x53"></p>
+				<p id="x54"></p>
+				<p id="x55"></p>
+				<a id="aImg" href="#"> <img src="images/coke-can.png" alt="Pure CSS Coke Can"> </a>
+			</div>
+		</div>-->
+
+		<!--<script type="text/javascript">
+		$(function(){
+			if(!isWeiXin()){
+				document.write("请在微信中打开");
+				setTimeout("location.replace('http://www.pinpaishengyan.com')",3000);
+			}
+		})
+			function isWeiXin() {
+				var ua = window.navigator.userAgent.toLowerCase();
+				if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+					return true;
+					
+					
+				} else {
+					return false;
+		}
+	}
+		</script>-->
+		 <!--<script src="js/rotateCoco.js" type="text/javascript"></script>-->
+	</body>
+
+</html>
